@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук</title>
+</head>
+<body>
+    <main>
+        <fieldset>
+            <legend>
+                <h1>Пошук своєї мрії!</h1>
+            </legend>
+            <form>
+                <section>
+                    <legend>Тип кузова:</legend>
+                    <p>
+                        <label>
+                            <input type="radio" name="body car">
+                            Універсал
+                        </label>
+                        <label>
+                            <input type="radio" name="body car">
+                            Седан
+                        </label>
+                        <label>
+                            <input type="radio" name="body car">
+                            Позашляховик/кросовер
+                        </label>
+                        <label>
+                            <input type="radio" name="body car">
+                            Купе
+                        </label>
+                        <label>
+                            <input type="radio" name="body car">
+                            Хетчбек
+                        </label>
+                        <label>
+                            <input type="radio" name="body car">
+                            Кабріолет
+                        </label>
+                    </p>
+                </section>
+                <section>
+                    Марка авто:
+                    <select id="selectlist" name="Car brand" aria-label="Марка авто" class="select grey span3">
+                        <option value="0" selected disabled>Виберіть марку</option>
+                        <option value="1">Volkswagen</option>
+                        <option value="2">Chrysler</option>
+                        <option value="3">Ford</option>
+                        <option value="4">Nissan</option>
+                        <option value="5">BMW</option>
+                        <option value="6">Mazda</option>
+                        <option value="7">Mercedes-Benz</option>
+                        <option value="8">Mitsubishi</option>
+                        <option value="9">Porsche</option>
+                        <option value="10">Toyota</option>
+                        <option value="11">Всі</option>
+                    </select>
+                </section>
+                <section>
+                    <p>
+                        Тип транспорту:
+                        <select name="body type" aria-label="Тип транспорту" class="select grey span3">
+                            <option value="0" selected disabled>Всі типи транспорту</option>
+                            <option value="1">Легкові</option>
+                            <option value="2">Мото</option>
+                            <option value="6">Вантажівки</option>
+                            <option value="5">Причепи</option>
+                            <option value="4">Спецтехніка</option>
+                            <option value="10">Сільгосптехніка</option>
+                            <option value="7">Автобуси</option>
+                            <option value="3">Водний транспорт</option>
+                            <option value="9">Повітряний транспорт</option>
+                            <option value="8">Автобудинки</option>
+                        </select>
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        Країна виробник:
+                        <select name="Car brand" aria-label="Країна виробник" class="select grey span3">
+                            <option value="0" selected disabled>Оберіть країну</option>
+                            <option value="276">Німеччина</option>
+                            <option value="392">Японія</option>
+                            <option value="250">Франція</option>
+                            <option value="840">США</option>
+                            <option value="408">Корея</option>
+                            <option value="203">Чехія</option>
+                            <option value="804">Україна</option>
+                            <option value="380">Італія</option>
+                            <option value="752">Швеція</option>
+                            <option value="158">Китай</option>
+                            <option value="40">Австрія</option>
+                            <option value="826">Англія</option>
+                            <option value="32">Аргентина</option>
+                            <option value="56">Бельгія</option>
+                            <option value="112">Білорусь</option>
+                            <option value="100">Болгарія</option>
+                            <option value="76">Бразилія</option>
+                            <option value="900">Грузія</option>
+                            <option value="208">Данія</option>
+                            <option value="233">Естонія</option>
+                            <option value="356">Індія</option>
+                            <option value="364">Іран</option>
+                            <option value="901">Ірландія</option>
+                            <option value="903">Ісландія</option>
+                            <option value="724">Іспанія</option>
+                            <option value="380">Італія</option>
+                            <option value="398">Казахстан</option>
+                            <option value="124">Канада</option>
+                            <option value="158">Китай</option>
+                            <option value="408">Корея</option>
+                            <option value="428">Латвія</option>
+                            <option value="440">Литва</option>
+                            <option value="442">Люксембург</option>
+                            <option value="458">Малайзія</option>
+                            <option value="498">Молдова</option>
+                            <option value="528">Нідерланди</option>
+                            <option value="276">Німеччина</option>
+                            <option value="578">Норвегія</option>
+                            <option value="902">ОАЕ</option>
+                            <option value="616">Польша</option>
+                            <option value="620">Португалiя</option>
+                            <option value="643">Росія</option>
+                            <option value="642">Румунія</option>
+                            <option value="688">Сербія</option>
+                            <option value="703">Словаччина</option>
+                            <option value="705">Словенія</option>
+                            <option value="840">США</option>
+                            <option value="792">Туреччина</option>
+                            <option value="348">Угорщина</option>
+                            <option value="860">Узбекистан</option>
+                            <option value="804">Україна</option>
+                            <option value="246">Фінляндія</option>
+                            <option value="250">Франція</option>
+                            <option value="203">Чехія</option>
+                            <option value="756">Швейцарія</option>
+                            <option value="752">Швеція</option>
+                            <option value="392">Японія</option>
+                        </select>
+                    </p>
+                </section>
+                <section>
+                    <p>Ціна, $:
+                        <input type="number" name="price_ot" id="priceFrom" placeholder="від"
+                            aria-labelledby="priceLabel" aria-label="Ціна від" min="0">
+
+                    </p>
+                    <p>
+                        Ціна, $:
+                        <input type="number" name="price_do" id="priceTo" placeholder="до" aria-labelledby="priceLabel"
+                            aria-label="Ціна до" min="0">
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        Рік від:
+                        <select id="at_year-to" class="elem grey">
+                            <option value="0" selected disabled>від</option>
+                            <option value="2022">2000</option>
+                            <option value="2021">2001</option>
+                            <option value="2020">2002</option>
+                            <option value="2019">2003</option>
+                            <option value="2018">2004</option>
+                            <option value="2017">2005</option>
+                            <option value="2016">2006</option>
+                            <option value="2015">2007</option>
+                            <option value="2014">2008</option>
+                            <option value="2013">2009</option>
+                            <option value="2012">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2012</option>
+                            <option value="2009">2013</option>
+                            <option value="2008">2014</option>
+                            <option value="2007">2015</option>
+                            <option value="2006">2016</option>
+                            <option value="2005">2017</option>
+                            <option value="2004">2018</option>
+                            <option value="2003">2019</option>
+                            <option value="2002">2020</option>
+                            <option value="2001">2021</option>
+                            <option value="2000">2022</option>
+                        </select>
+                    </p>
+                    <p>
+                        Рік до:
+                        <select id="at_year" class="elem grey">
+                            <option value="0" selected disabled>до</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                        </select>
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        Стан авто: <br>
+                        <label>
+                            <input type="checkbox" name="Broken">
+                            Пошкоджена
+                        </label>
+                        <label>
+                            <input type="checkbox" name="credit">
+                            В кредиті
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Uncleared">
+                            Не росмитнена
+                        </label>
+                        <label>
+                            <input type="checkbox" name="from the seller">
+                            Від власника
+                        </label>
+                        <label>
+                            <input type="checkbox" name="car from the USA">
+                            Авто із США
+                        </label>
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        Тип палива: <br>
+                        <label>
+                            <input type="checkbox" name="Fuel type">
+                            Дизель
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Fuel type">
+                            Бензин
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Fuel type">
+                            Газ
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Fuel type">
+                            Електро
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Fuel type">
+                            Інше
+                        </label>
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        КПП: <br>
+                        <label>
+                            <input type="checkbox" name="Gearbox type">
+                            Ручна/Механічна
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Gearbox type">
+                            Автомат
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Gearbox type">
+                            Типтронік
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Gearbox type">
+                            Робот
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Gearbox type">
+                            Варіатор
+                        </label>
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        Оберіть колір:
+                        <label>
+                            <input type="color">
+                        </label>
+                    </p>
+                </section>
+                <section>
+                    <legend>Комфорт</legend>
+                    <p>
+                        <label>
+                            <input type="radio" name="Comfort">
+                            Люк
+                        </label>
+                        <label>
+                            <input type="radio" name="Comfort">
+                            Шкіряний салон
+                        </label>
+                        <label>
+                            <input type="radio" name="Comfort">
+                            Автозапуск
+                        </label>
+                        <label>
+                            <input type="radio" name="Comfort">
+                            Мультируль
+                        </label>
+                        <label>
+                            <input type="radio" name="Comfort">
+                            Автосигналізація
+                        </label>
+                    </p>
+                </section>
+                <button type="submit">
+                    <h2>GO !</h2>
+                </button>
+            </form>
+        </fieldset>
+    </main>
+</body>
+
+</html>
