@@ -21,29 +21,30 @@
             <legend>
                 <h1>Авторизація</h1>
             </legend>
-            <form>
+            <form method="post" name="Autorization" action="https://fom.in.ua/echo">
                 <p>
                     <label>
                         Пошта:
-                        <input type="email" required placeholder="Введіть свою пошту">
+                        <input type="email" name="Пошта" required placeholder="Введіть свою пошту">
                     </label>
                 </p>
                 <p>
                     <label>
                         Пароль:
-                        <input type="password" required placeholder="Пароль">
+                        <input type="password" name="Пароль" required placeholder="Пароль">
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input type="checkbox" name="Запам">
+                        <input type="checkbox" name="Зберегти">
                         Збрегти пароль
                     </label>
                 </p>
+                <button type="submit">
+                    <h2>Прийняти</h2>
+                </button>
             </form>
-            <button type="submit">
-                <h2>Прийняти</h2>
-            </button>
+
         </fieldset>
     </main>
 </body>
